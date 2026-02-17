@@ -6,7 +6,7 @@ def rec(i, sum, list):
     if sum == N:
         res.append(list.copy())
         return
-    if i < len(arr):
+    if i < len(arr):                        
         list.append(arr[i])
         rec(i+1, sum+arr[i], list)
         list.pop()  
